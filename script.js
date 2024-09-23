@@ -1,3 +1,23 @@
+//blog section-btn
+
+
+document.getElementById('donation-btn').addEventListener('click',function(){
+  const donationSection=document.getElementById('donation-section');
+donationSection.classList.remove('hidden');
+const historySection=document.getElementById('history-section');
+historySection.classList.add('hidden');
+})
+/**
+ * history button
+ */
+document.getElementById('history-btn').addEventListener('click',function(){
+  const donationSection=document.getElementById('history-section');
+donationSection.classList.remove('hidden');
+const donationSectionHide=document.getElementById('donation-section');
+donationSectionHide.classList.add('hidden');
+
+})
+//history button-end
 document.getElementById('nohakhali-btn').addEventListener('click', function () {
 
   //nohakhali input
@@ -28,5 +48,13 @@ document.getElementById('nohakhali-btn').addEventListener('click', function () {
   `
   const historyContainer=document.getElementById('history-section');
   historyContainer.insertBefore(historyItem,historyContainer.firstChild);
-  
+
 })
+// donation button
+/**
+document.getElementById('donation-btn').addEventListener('click',function(){
+  const donationSection=document.getElementById('donation-section');
+donationSection.classList.remove='hidden';
+console.log(donationSection);
+
+})*/

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
+  <title>Donate Bangladesh</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +15,7 @@
     <div class="fixed-width">
       <div class="navbar">
         <div class="left">
-          <a class="bg-[#B4F461] px-4 lg:px-6 py-1 lg:py-3 rounded" href="#blog">Blog</a>
+          <a class="bg-[#B4F461] px-4 lg:px-6 py-1 lg:py-3 rounded" href="blog.html">Blog</a>
         </div>
         <div class="center">
           <div class="logo"><img src="assets/logo.png"></div>
@@ -33,12 +33,13 @@
   <main class="bg-[#FFFFFF]">
     <section class="my-8">
       <div class="flex justify-center">
-        <button class="mr-2 bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
-        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        <button id="donation-btn" class="mr-2 bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+        <button id="history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
       </div>
     </section>
     <section>
       <!-- card -section-start -->
+       <div id="donation-section">
       <div class="fixed-width">
         <div class="card lg:card-side bg-base-100 shadow-xl">
           <figure class="w-full">
@@ -111,6 +112,7 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- card -section-end -->
     </section>
     <!-- History-section-start -->
