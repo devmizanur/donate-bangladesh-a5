@@ -48,7 +48,7 @@ document.getElementById('nohakhali-btn').addEventListener('click', function () {
   `
   const historyContainer = document.getElementById('history-section');
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-
+  
 });
 // common function
 function getInputValue(id) {
@@ -126,7 +126,7 @@ function alertFun(id) {
   document.getElementById(id).addEventListener('click', function () {
     alert(`
       Congratulation !
-      you have doanted for humankind`);
+      you have donated for humankind`);
     return;
   })
 }
